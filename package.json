@@ -1,12 +1,32 @@
 {
-  "name": "my-v0-project",
-  "version": "0.1.0",
+  "name": "darvin-security-website",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "next build",
+    "build": "react-scripts build",
     "dev": "next dev",
+    "eject": "react-scripts eject",
     "lint": "next lint",
-    "start": "next start"
+    "start": "react-scripts start",
+    "test": "react-scripts test"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
@@ -53,6 +73,7 @@
     "react-dom": "^18",
     "react-hook-form": "latest",
     "react-resizable-panels": "latest",
+    "react-scripts": "5.0.1",
     "recharts": "latest",
     "sonner": "latest",
     "tailwind-merge": "^2.5.5",
