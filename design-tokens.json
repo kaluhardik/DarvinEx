@@ -1,0 +1,133 @@
+{
+  "colors": {
+    "primary": {
+      "50": "#eff6ff",
+      "100": "#dbeafe",
+      "200": "#bfdbfe",
+      "300": "#93c5fd",
+      "400": "#60a5fa",
+      "500": "#3b82f6",
+      "600": "#2563eb",
+      "700": "#1d4ed8",
+      "800": "#1e40af",
+      "900": "#1e3a8a"
+    },
+    "slate": {
+      "50": "#f8fafc",
+      "100": "#f1f5f9",
+      "200": "#e2e8f0",
+      "300": "#cbd5e1",
+      "400": "#94a3b8",
+      "500": "#64748b",
+      "600": "#475569",
+      "700": "#334155",
+      "800": "#1e293b",
+      "900": "#0f172a"
+    },
+    "cyan": {
+      "300": "#67e8f9",
+      "400": "#22d3ee",
+      "500": "#06b6d4"
+    },
+    "green": {
+      "400": "#4ade80",
+      "500": "#22c55e"
+    },
+    "red": {
+      "400": "#f87171",
+      "500": "#ef4444"
+    },
+    "orange": {
+      "400": "#fb923c",
+      "500": "#f97316"
+    },
+    "yellow": {
+      "400": "#fbbf24",
+      "500": "#eab308"
+    },
+    "purple": {
+      "400": "#a855f7",
+      "500": "#8b5cf6"
+    }
+  },
+  "spacing": {
+    "0": "0px",
+    "1": "4px",
+    "2": "8px",
+    "3": "12px",
+    "4": "16px",
+    "5": "20px",
+    "6": "24px",
+    "8": "32px",
+    "10": "40px",
+    "12": "48px",
+    "16": "64px",
+    "20": "80px",
+    "24": "96px",
+    "32": "128px"
+  },
+  "fontSize": {
+    "xs": "12px",
+    "sm": "14px",
+    "base": "16px",
+    "lg": "18px",
+    "xl": "20px",
+    "2xl": "24px",
+    "3xl": "30px",
+    "4xl": "36px",
+    "5xl": "48px",
+    "6xl": "60px"
+  },
+  "fontWeight": {
+    "normal": "400",
+    "medium": "500",
+    "semibold": "600",
+    "bold": "700"
+  },
+  "lineHeight": {
+    "tight": "1.25",
+    "normal": "1.5",
+    "relaxed": "1.625"
+  },
+  "borderRadius": {
+    "none": "0px",
+    "sm": "2px",
+    "base": "4px",
+    "md": "6px",
+    "lg": "8px",
+    "xl": "12px",
+    "2xl": "16px",
+    "full": "9999px"
+  },
+  "boxShadow": {
+    "sm": "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
+    "base": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+    "md": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+    "lg": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+    "xl": "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+    "2xl": "0 25px 50px -12px rgba(0, 0, 0, 0.25)"
+  },
+  "animation": {
+    "duration": {
+      "fast": "150ms",
+      "normal": "300ms",
+      "slow": "500ms",
+      "slower": "1000ms"
+    },
+    "easing": {
+      "linear": "linear",
+      "ease": "ease",
+      "easeIn": "ease-in",
+      "easeOut": "ease-out",
+      "easeInOut": "ease-in-out",
+      "custom": "cubic-bezier(0.4, 0, 0.6, 1)"
+    }
+  },
+  "breakpoints": {
+    "sm": "640px",
+    "md": "768px",
+    "lg": "1024px",
+    "xl": "1280px",
+    "2xl": "1536px"
+  }
+}

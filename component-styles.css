@@ -1,0 +1,288 @@
+/* Component-specific CSS classes for design reference */
+
+/* Button Component Styles */
+.btn-base {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 150ms ease-in-out;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.btn-default {
+  background-color: #2563eb;
+  color: #ffffff;
+  padding: 8px 16px;
+  height: 40px;
+}
+
+.btn-default:hover {
+  background-color: #1d4ed8;
+}
+
+.btn-default:focus {
+  box-shadow: 0 0 0 2px #3b82f6;
+}
+
+.btn-large {
+  padding: 12px 32px;
+  height: 44px;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 1px solid #475569;
+  color: #cbd5e1;
+}
+
+.btn-outline:hover {
+  background-color: rgba(30, 41, 59, 0.5);
+}
+
+/* Card Component Styles */
+.card-base {
+  background-color: rgba(30, 41, 59, 0.5);
+  border: 1px solid rgba(51, 65, 85, 0.5);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(24px);
+}
+
+.card-header {
+  padding: 24px;
+}
+
+.card-content {
+  padding: 24px;
+  padding-top: 0;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.card-description {
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+/* Badge Component Styles */
+.badge-base {
+  display: inline-flex;
+  align-items: center;
+  padding: 2.5px 10px;
+  border-radius: 9999px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.badge-default {
+  background-color: rgba(37, 99, 235, 0.2);
+  color: #60a5fa;
+  border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+/* Globe Container Styles */
+.globe-container {
+  width: 500px;
+  height: 500px;
+  perspective: 1500px;
+  position: relative;
+}
+
+.globe-core {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 25% 25%, #3b82f6, #1e40af, #1e3a8a, #0f172a);
+  box-shadow: 0 0 60px rgba(59, 130, 246, 0.8), 0 0 120px rgba(59, 130, 246, 0.6), inset 0 0 60px
+    rgba(59, 130, 246, 0.3);
+  animation: globe-rotate 60s linear infinite, globe-pulse 6s ease-in-out infinite;
+  transform-style: preserve-3d;
+}
+
+/* Satellite Styles */
+.satellite-orbit {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 400px;
+  height: 400px;
+  margin-left: -200px;
+  margin-top: -200px;
+  animation: satellite-orbit 60s linear infinite;
+}
+
+.satellite-body {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 4px solid rgba(255, 255, 255, 0.2);
+  background: linear-gradient(135deg, #ef4444, #f97316, #dc2626);
+  box-shadow: 0 0 20px rgba(239, 68, 68, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: satellite-counter-rotate 60s linear infinite;
+}
+
+.satellite-active {
+  transform: scale(1.25);
+  box-shadow: 0 0 40px rgba(239, 68, 68, 0.8);
+}
+
+/* Asteroid Styles */
+.asteroid {
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #ef4444, #ef4444dd, #ef444488);
+  box-shadow: 0 0 20px #ef444466;
+  animation: asteroid-spin 2s linear infinite;
+}
+
+.asteroid-trail {
+  position: absolute;
+  border-radius: 50%;
+  animation: asteroid-trail 0.5s ease-out infinite;
+}
+
+/* Background Effect Styles */
+.network-grid {
+  background-image: linear-gradient(rgba(59, 130, 246, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(59, 130, 246, 0.1) 1px, transparent 1px);
+  background-size: 100px 100px;
+}
+
+.network-node {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(59, 130, 246, 0.6);
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.3);
+  animation: network-pulse 3s ease-in-out infinite;
+}
+
+.floating-shield {
+  opacity: 0.1;
+  color: #93c5fd;
+  animation: security-float 20s ease-in-out infinite;
+}
+
+/* Status Panel Styles */
+.status-panel {
+  background-color: rgba(30, 41, 59, 0.95);
+  border: 1px solid rgba(51, 65, 85, 0.5);
+  border-radius: 8px;
+  padding: 16px;
+  backdrop-filter: blur(24px);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.status-indicator {
+  width: 12px;
+  height: 12px;
+  background-color: #06b6d4;
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(6, 182, 212, 0.5);
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Animation Keyframes */
+@keyframes globe-rotate {
+  0% {
+    transform: rotateX(-20deg) rotateY(0deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(-20deg) rotateY(360deg) rotateZ(0deg);
+  }
+}
+
+@keyframes globe-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 60px rgba(59, 130, 246, 0.8);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 80px rgba(59, 130, 246, 1);
+    transform: scale(1.05);
+  }
+}
+
+@keyframes satellite-orbit {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes satellite-counter-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes asteroid-spin {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  100% {
+    transform: rotate(360deg) scale(1.1);
+  }
+}
+
+@keyframes asteroid-trail {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+}
+
+@keyframes network-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+}
+
+@keyframes security-float {
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+    opacity: 0.1;
+  }
+  50% {
+    transform: translateY(-30px) rotate(180deg);
+    opacity: 0.15;
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
